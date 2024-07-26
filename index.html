@@ -10,6 +10,7 @@
     <div class="imageSidebar">
         <img class="plantImage" src="plants.avif" alt="Scene of Ferns">
         <div class="logoCard"></div>
+
         <div class="logo">
             <img class="odinLogo" src="odin-lined.png" alt="Odin Logo">
             <p>Odin</p>
@@ -23,17 +24,48 @@
                 like this in your life to help you realize your deepest dreams.
             </p>
             <p>
-                Sign up now to get started.
+                Sign up <em>now</em> to get started.
             </p>
             <p>
-                You know you want to.
+                You <em>know</em> you want to.
             </p>
         </div>
 
         <form>
+            <p>Let's do this!</p>
+            <ul>
+                <li>
+                    <label for="firstName">FIRST NAME</label>
+                    <input type="text" name="firstName" id="firstName">
+                </li>
+                <li>
+                    <label for="lastName">LAST NAME</label>
+                    <input type="text" name="lastName" id="lastName">
+                </li>
+                <li>
+                    <label for="email">EMAIL</label>
+                    <input type="email" name="email" id="email">
+                </li>
+                <li>
+                    <label for="phoneNumber">PHONE NUMBER</label>
+                    <input type="tel" name="phoneNumber" id="phoneNumber">
+                </li>
+                <li>
+                    <label for="password">PASSWORD</label>
+                    <input type="password" name="password" id="password">
+                    <p class="validCheck"></p>
+                </li>
+                <li>
+                    <label for="confirmPassword">CONFIRM PASSWORD</label>
+                    <input type="password" name="confirmPassword" id="confirmPassword">
+                </li>
+            </ul>
 
         </form>
+        <button type="submit">Create Account</button>
+        <p class="logIn">Already have an account? <a href="#">Log in</a></p>
     </div>
+    <script src="javascript.js"></script>
 </body>
 </html>
 

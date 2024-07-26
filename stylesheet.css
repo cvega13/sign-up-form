@@ -19,8 +19,12 @@ body {
 
 /* Image Sidebar */
 .imageSidebar {
-    width: 40%;
+    width: 40vw;
     height: 100vh;
+}
+
+.plantImage {
+    width: 40vw;
 }
 
 img {
@@ -28,32 +32,23 @@ img {
     height: 100%;
 }
 
-.plantImage {
-    position: absolute;
-    width: inherit;
-    z-index: -1;
-}
-
-
 .logo, .logoCard {
-    top: 8rem;
-    width: auto;
-    height: 20%;
-    position: relative;
-    padding: 20px;
+    top: 32rem;
+    width: inherit;
+    height: 16rem;
+    position: absolute;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .logo {
     display: flex;
     flex-direction: row;
-    font-size: 1.2em;
     color: white;
-    position: absolute;
     justify-content: center;
     align-items: center;
-    width: 40%; /* FIGURE OUT HOW TO MAKE THIS NICER*/
 
-    font: 12em "norse", monospace;
+    font: 8vw "norse", monospace;
 }
 
 .logoCard {
@@ -65,3 +60,103 @@ img {
     width: auto;
 }
 
+/* FORMS */
+.signUpForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1em;
+    font: 2.75rem "Arial", monospace;
+    width: auto;
+    background-color: #f9fafc;
+}
+
+.signUpText > p {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+ul, input, button {
+    list-style: none;
+    font-size: 1.75rem;
+}
+
+input, label {
+    display: block;
+}
+
+form {
+    background-color: #ffffff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    background-color: #596D48;
+    color: #ffffff;
+    border-radius: 10px;
+    border: 0px;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    width: fit-content;
+    margin-left: 3em;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 950px;
+    align-content: flex-start;
+}
+
+.signUpText, form > p, button {
+    font-weight: 900;
+}
+
+input {
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 30px;
+    width: 75%;
+    padding: 4px;
+    border-color: #E5E7EB;
+}
+
+label {
+    width: fit-content;
+}
+
+input:invalid {
+    border-color: red;
+    outline: red;
+    border-width: 4px;
+}
+
+input:focus {
+    border-color: #516176;
+    outline: #516176;
+    border-width: 4px;
+}
+
+li {
+    padding: 20px;
+}
+
+.validCheck {
+    color: red;
+    font-weight: 500;
+}
+
+/* Form Padding */
+.signUpText, form, .logIn {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+form, ul {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
